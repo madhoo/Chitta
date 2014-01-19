@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_bvRbUG6BEeGfNaM8MPluyw" name="model">
+  <packagedElement xmi:type="uml:Class" xmi:id="_cpBGwG6BEeGfNaM8MPluyw" name="samples">
+    <ownedAttribute xmi:id="_5_RPEG6BEeGfNaM8MPluyw" name="date"/>
+    <ownedAttribute xmi:id="_-Ef_EG6BEeGfNaM8MPluyw" name="patient"/>
+    <ownedAttribute xmi:id="_E_qaYG6CEeGfNaM8MPluyw" name="substance"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_dV73IG6BEeGfNaM8MPluyw" name="patient">
+    <ownedAttribute xmi:id="_LpHaoG6CEeGfNaM8MPluyw" name="samples" type="_cpBGwG6BEeGfNaM8MPluyw" association="_LpJ24G6CEeGfNaM8MPluyw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LpHaoW6CEeGfNaM8MPluyw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LpHaom6CEeGfNaM8MPluyw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_N7qFAG6CEeGfNaM8MPluyw" name="first_name"/>
+    <ownedAttribute xmi:id="_P4ng8G6CEeGfNaM8MPluyw" name="last_name"/>
+    <ownedAttribute xmi:id="_RuJfMG6CEeGfNaM8MPluyw" name="date_of_birth"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_w7ycYG6BEeGfNaM8MPluyw" name="blood">
+    <generalization xmi:id="_2CnMQG6BEeGfNaM8MPluyw" general="_cpBGwG6BEeGfNaM8MPluyw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_yQlFEG6BEeGfNaM8MPluyw" name="urine">
+    <generalization xmi:id="_29e5EG6BEeGfNaM8MPluyw" general="_cpBGwG6BEeGfNaM8MPluyw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_LpJ24G6CEeGfNaM8MPluyw" name="patient_samples_1" memberEnd="_LpJ24W6CEeGfNaM8MPluyw _LpHaoG6CEeGfNaM8MPluyw">
+    <ownedEnd xmi:id="_LpJ24W6CEeGfNaM8MPluyw" name="patient" type="_dV73IG6BEeGfNaM8MPluyw" association="_LpJ24G6CEeGfNaM8MPluyw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LpJ24m6CEeGfNaM8MPluyw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LpJ2426CEeGfNaM8MPluyw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>

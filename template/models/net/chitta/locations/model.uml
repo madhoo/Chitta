@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_Qk_pUG6DEeGfNaM8MPluyw" name="model">
+  <packagedElement xmi:type="uml:Class" xmi:id="_XrYdMG6DEeGfNaM8MPluyw" name="cities"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Z6ziIG6DEeGfNaM8MPluyw" name="countries"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_fGsYMG6DEeGfNaM8MPluyw" name="states"/>
+</uml:Model>

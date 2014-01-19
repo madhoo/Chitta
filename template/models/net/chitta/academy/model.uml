@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_gj8g8G3hEeG-x430MmxCwg" name="model">
+  <packagedElement xmi:type="uml:Class" xmi:id="_Es_ywG3iEeG-x430MmxCwg" name="students"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_IPGAgG3iEeG-x430MmxCwg" name="faculty_members"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Sfkx0G3iEeG-x430MmxCwg" name="assignments"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_f7m5IG3iEeG-x430MmxCwg" name="Courses"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_nM-N8G3iEeG-x430MmxCwg" name="enrolments"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oxAB4G6lEeGfNaM8MPluyw" name="schedule"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_lk-o8HdEEeGy-v5HUCH2hQ" name="location"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_8TqnYHdEEeGy-v5HUCH2hQ" name="net.chitta">
+    <packagedElement xmi:type="uml:Package" xmi:id="_CNZooHdKEeGy-v5HUCH2hQ" name="authentication">
+      <packagedElement xmi:type="uml:Component" xmi:id="_Q5AhcHdKEeGy-v5HUCH2hQ" name="authentication" useCase="_eicyoHdKEeGy-v5HUCH2hQ _fovFQHdKEeGy-v5HUCH2hQ">
+        <ownedUseCase xmi:id="_eicyoHdKEeGy-v5HUCH2hQ" name="registeration" subject="_Q5AhcHdKEeGy-v5HUCH2hQ">
+          <extensionPoint xmi:id="_OzZ9sHeIEeGy-v5HUCH2hQ" name="point"/>
+        </ownedUseCase>
+        <ownedUseCase xmi:id="_fovFQHdKEeGy-v5HUCH2hQ" name="login" subject="_Q5AhcHdKEeGy-v5HUCH2hQ">
+          <extend xmi:id="_OzCxUHeIEeGy-v5HUCH2hQ" extendedCase="_eicyoHdKEeGy-v5HUCH2hQ" extensionLocation="_OzZ9sHeIEeGy-v5HUCH2hQ"/>
+        </ownedUseCase>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_xQJ40HdTEeGy-v5HUCH2hQ" name="academy">
+      <packagedElement xmi:type="uml:Component" xmi:id="_GVxAoHdUEeGy-v5HUCH2hQ" name="Subsystem" useCase="_EWX0YHdXEeGy-v5HUCH2hQ _GZb4UHdXEeGy-v5HUCH2hQ _KAsS4HdXEeGy-v5HUCH2hQ _LVzEoHdXEeGy-v5HUCH2hQ">
+        <ownedUseCase xmi:id="_EWX0YHdXEeGy-v5HUCH2hQ" name="enrol" subject="_GVxAoHdUEeGy-v5HUCH2hQ"/>
+        <ownedUseCase xmi:id="_GZb4UHdXEeGy-v5HUCH2hQ" name="browse" subject="_GVxAoHdUEeGy-v5HUCH2hQ"/>
+        <ownedUseCase xmi:id="_KAsS4HdXEeGy-v5HUCH2hQ" name="authenticated" subject="_GVxAoHdUEeGy-v5HUCH2hQ"/>
+        <ownedUseCase xmi:id="_LVzEoHdXEeGy-v5HUCH2hQ" name="not_authenticated" subject="_GVxAoHdUEeGy-v5HUCH2hQ"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_EfD7gHdFEeGy-v5HUCH2hQ" name="student"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_TkebcHdFEeGy-v5HUCH2hQ" name="admin"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_am4HMHdFEeGy-v5HUCH2hQ" name="tutor"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ROPVIHdLEeGy-v5HUCH2hQ" name="A_prospective_student_browse" memberEnd="_ROPVIXdLEeGy-v5HUCH2hQ _ROPVJHdLEeGy-v5HUCH2hQ">
+    <ownedEnd xmi:id="_ROPVIXdLEeGy-v5HUCH2hQ" name="prospective_student" type="_EfD7gHdFEeGy-v5HUCH2hQ" association="_ROPVIHdLEeGy-v5HUCH2hQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ROPVIndLEeGy-v5HUCH2hQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ROPVI3dLEeGy-v5HUCH2hQ" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_ROPVJHdLEeGy-v5HUCH2hQ" name="browse" type="_fovFQHdKEeGy-v5HUCH2hQ" association="_ROPVIHdLEeGy-v5HUCH2hQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ROPVJXdLEeGy-v5HUCH2hQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ROP8MHdLEeGy-v5HUCH2hQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_gS-oYHeHEeGy-v5HUCH2hQ" name="Activity1"/>
+</uml:Model>

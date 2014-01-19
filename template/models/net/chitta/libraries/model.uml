@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_tm5SQG6DEeGfNaM8MPluyw" name="model">
+  <packagedElement xmi:type="uml:Class" xmi:id="_F9lwUG6EEeGfNaM8MPluyw" name="catalogue">
+    <ownedAttribute xmi:id="_JMvpkG6oEeGfNaM8MPluyw" name="title"/>
+    <ownedAttribute xmi:id="_MzqF4G6oEeGfNaM8MPluyw" name="publisher"/>
+    <ownedAttribute xmi:id="_OhF4EG6oEeGfNaM8MPluyw" name="publish_date"/>
+    <ownedAttribute xmi:id="_RA6wgG6oEeGfNaM8MPluyw" name="ISBN"/>
+    <ownedAttribute xmi:id="_g9or4G6oEeGfNaM8MPluyw" name="call_number"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_IHbKoG6EEeGfNaM8MPluyw" name="books">
+    <ownedAttribute xmi:id="_HVzykG6nEeGfNaM8MPluyw" name="copy_number"/>
+    <ownedAttribute xmi:id="_K95TkG6nEeGfNaM8MPluyw" name="call_number"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_J_lmIG6EEeGfNaM8MPluyw" name="location"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_OKQPwG6EEeGfNaM8MPluyw" name="publisher"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_6C948G6lEeGfNaM8MPluyw" name="authors"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_WkwpAG6nEeGfNaM8MPluyw" name="loan">
+    <ownedAttribute xmi:id="_ZgDVcG6nEeGfNaM8MPluyw" name="date_out"/>
+    <ownedAttribute xmi:id="_iNJBYG6nEeGfNaM8MPluyw" name="date_due"/>
+    <ownedAttribute xmi:id="_jnth8G6nEeGfNaM8MPluyw" name="date_returned"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ybEBgG6nEeGfNaM8MPluyw" name="customer">
+    <ownedAttribute xmi:id="_81cVsG6nEeGfNaM8MPluyw" name="first_name"/>
+    <ownedAttribute xmi:id="_-QTxMG6nEeGfNaM8MPluyw" name="last_name"/>
+    <ownedAttribute xmi:id="__7wmYG6nEeGfNaM8MPluyw" name="phone_number"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_nu7YgG6zEeGfNaM8MPluyw" name="phones"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_sqCAkG6zEeGfNaM8MPluyw" name="emails"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_7xSTkG6zEeGfNaM8MPluyw" name="addreses"/>
+</uml:Model>

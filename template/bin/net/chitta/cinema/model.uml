@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_0YLI8IOkEeGfQv7RgI9ewQ" name="model">
+  <packagedElement xmi:type="uml:Class" xmi:id="__mdmUIOkEeGfQv7RgI9ewQ" name="BookingSystem">
+    <ownedAttribute xmi:id="_qbQh8IOmEeGfQv7RgI9ewQ" name="users" visibility="private" type="_JyO2wIOlEeGfQv7RgI9ewQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Kn8MIPfEeGfQv7RgI9ewQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Kbu8IPfEeGfQv7RgI9ewQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_N0ZZwIOnEeGfQv7RgI9ewQ" name="cinema" visibility="private" type="_fmAPoIOmEeGfQv7RgI9ewQ"/>
+    <ownedAttribute xmi:id="_vYHO8IPREeGfQv7RgI9ewQ" name="name" visibility="private"/>
+    <ownedAttribute xmi:id="_36DI4IPTEeGfQv7RgI9ewQ" name="name" visibility="private" type="_9Pq10IPrEeGfQv7RgI9ewQ"/>
+    <ownedAttribute xmi:id="_IorpYIPUEeGfQv7RgI9ewQ" name="bookings" visibility="private" type="_TkoTAIOnEeGfQv7RgI9ewQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VQIZcIZCEeGwdfBoX3aNQA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j3KWcIPgEeGfQv7RgI9ewQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zLhu0IPUEeGfQv7RgI9ewQ" name="ACCESS_LEVELS" type="_oJT-kIPUEeGfQv7RgI9ewQ"/>
+    <ownedAttribute xmi:id="_JFE4MIPZEeGfQv7RgI9ewQ" name="sc" visibility="private" type="__3jYsIPYEeGfQv7RgI9ewQ"/>
+    <ownedAttribute xmi:id="_McECIIPZEeGfQv7RgI9ewQ" name="loggedPerson" visibility="private" type="_JyO2wIOlEeGfQv7RgI9ewQ"/>
+    <ownedAttribute xmi:id="_ftejQIPrEeGfQv7RgI9ewQ" name="Property1"/>
+    <ownedAttribute xmi:id="_KCM8IYW4EeGeifd1GWrc7A" name="EXIT"/>
+    <ownedOperation xmi:id="_0FqlYIPgEeGfQv7RgI9ewQ" name="BookingSystem"/>
+    <ownedOperation xmi:id="_0-wwkIPgEeGfQv7RgI9ewQ" name="BookingSystem"/>
+    <ownedOperation xmi:id="_15moMIPgEeGfQv7RgI9ewQ" name="toString"/>
+    <ownedOperation xmi:id="_21NU0IPgEeGfQv7RgI9ewQ" name="loginScreen"/>
+    <ownedOperation xmi:id="_5zFMsIW4EeGeifd1GWrc7A" name="isUserExist"/>
+    <ownedOperation xmi:id="_6R0XIIW4EeGeifd1GWrc7A" name="performActions"/>
+    <ownedOperation xmi:id="_60EvoIW4EeGeifd1GWrc7A" name="processUserManagement"/>
+    <ownedOperation xmi:id="_7WC0QIW4EeGeifd1GWrc7A" name="processShowUsers"/>
+    <ownedOperation xmi:id="_8ptbkIW4EeGeifd1GWrc7A" name="processScreenManagement"/>
+    <ownedOperation xmi:id="_Rg_zgIW5EeGeifd1GWrc7A" name="processMovieManagement"/>
+    <ownedOperation xmi:id="_R2TVIIW5EeGeifd1GWrc7A" name="processAddMovies"/>
+    <ownedOperation xmi:id="_SO8eoIW5EeGeifd1GWrc7A" name="processUpdateMovies"/>
+    <ownedOperation xmi:id="_SmUc0IW5EeGeifd1GWrc7A" name="processDeleteMovies"/>
+    <ownedOperation xmi:id="_qv99YIW5EeGeifd1GWrc7A" name="processShowMovies"/>
+    <ownedOperation xmi:id="_trWJYIW5EeGeifd1GWrc7A" name="processAddShowing"/>
+    <ownedOperation xmi:id="_uDOd4IW5EeGeifd1GWrc7A" name="processShowShowing"/>
+    <ownedOperation xmi:id="_udA24IW5EeGeifd1GWrc7A" name="processUpdateShowing"/>
+    <ownedOperation xmi:id="_ze6qgIW5EeGeifd1GWrc7A" name="processDeleteShowing"/>
+    <ownedOperation xmi:id="_zy-O8IW5EeGeifd1GWrc7A" name="processBookingManagement"/>
+    <ownedOperation xmi:id="_0Jn0YIW5EeGeifd1GWrc7A" name="processShowBooking"/>
+    <ownedOperation xmi:id="_0qnooIW5EeGeifd1GWrc7A" name="processAuthoriseRefunds"/>
+    <ownedOperation xmi:id="_WwaCMIW6EeGeifd1GWrc7A" name="processCinemaFacilities"/>
+    <ownedOperation xmi:id="_XJ9xsIW6EeGeifd1GWrc7A" name="processCinemaPrices"/>
+    <ownedOperation xmi:id="_XmwbYIW6EeGeifd1GWrc7A" name="processPaymentsRefundsInfo"/>
+    <ownedOperation xmi:id="_YGSQAIW6EeGeifd1GWrc7A" name="processBooking"/>
+    <ownedOperation xmi:id="_u33KYIW6EeGeifd1GWrc7A" name="processAmendPersonalDetails"/>
+    <ownedOperation xmi:id="_vLU48IW6EeGeifd1GWrc7A" name="addManager"/>
+    <ownedOperation xmi:id="_vmOsQIW6EeGeifd1GWrc7A" name="addCustomer"/>
+    <ownedOperation xmi:id="_DJr8AIZDEeGwdfBoX3aNQA" name="run" visibility="package"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JyO2wIOlEeGfQv7RgI9ewQ" name="Person">
+    <ownedAttribute xmi:id="_j5sQkIPhEeGfQv7RgI9ewQ" name="password" visibility="private" type="_9Pq10IPrEeGfQv7RgI9ewQ"/>
+    <ownedAttribute xmi:id="_bS5H8IPjEeGfQv7RgI9ewQ" name="address" visibility="private" type="_9Pq10IPrEeGfQv7RgI9ewQ"/>
+    <ownedAttribute xmi:id="_dATsAIPjEeGfQv7RgI9ewQ" name="email" visibility="private" type="_9Pq10IPrEeGfQv7RgI9ewQ"/>
+    <ownedAttribute xmi:id="_eWk7YIPjEeGfQv7RgI9ewQ" name="telephone" visibility="private" type="_9Pq10IPrEeGfQv7RgI9ewQ"/>
+    <ownedAttribute xmi:id="_rcsdEIPjEeGfQv7RgI9ewQ" name="bookings" visibility="private" type="_TkoTAIOnEeGfQv7RgI9ewQ"/>
+    <ownedAttribute xmi:id="_m_1VkIP2EeGfQv7RgI9ewQ" name="userId" visibility="private" type="_9Pq10IPrEeGfQv7RgI9ewQ"/>
+    <ownedAttribute xmi:id="_oxPBwIP2EeGfQv7RgI9ewQ" name="accessLevel" visibility="private" type="_oJT-kIPUEeGfQv7RgI9ewQ"/>
+    <ownedOperation xmi:id="_Y-bJMIXLEeGeifd1GWrc7A" name="Person">
+      <ownedParameter xmi:id="_QkxZwIaTEeGKcf54A3lPjQ" name="name" visibility="package" type="_9Pq10IPrEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_ZNN2QIaTEeGKcf54A3lPjQ" name="pw" visibility="package" type="_9Pq10IPrEeGfQv7RgI9ewQ" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_Zlw2AIXLEeGeifd1GWrc7A" name="Person">
+      <ownedParameter xmi:id="_r9Gc0IaTEeGKcf54A3lPjQ" name="name" visibility="package" type="_9Pq10IPrEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_uK9bgIaTEeGKcf54A3lPjQ" name="pw" visibility="package" type="_9Pq10IPrEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_zR2c0IaTEeGKcf54A3lPjQ" name="accesslevel" visibility="package" type="_oJT-kIPUEeGfQv7RgI9ewQ" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_aBzRwIXLEeGeifd1GWrc7A" name="equals">
+      <ownedParameter xmi:id="_c-w2QIaIEeGMYKtjX0mJfA" type="_wkHTwIPsEeGfQv7RgI9ewQ" direction="return"/>
+      <ownedParameter xmi:id="_UT79sIaUEeGKcf54A3lPjQ" name="o" visibility="package" type="_Qm56AYaOEeGKcf54A3lPjQ" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_az2ZwIXLEeGeifd1GWrc7A" name="toString">
+      <ownedParameter xmi:id="_jMfj0IaIEeGMYKtjX0mJfA" type="_9Pq10IPrEeGfQv7RgI9ewQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_f9gbMIXLEeGeifd1GWrc7A" name="getUserId" visibility="package">
+      <ownedParameter xmi:id="_te8EAIaIEeGMYKtjX0mJfA" type="_9Pq10IPrEeGfQv7RgI9ewQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_glwG8IXLEeGeifd1GWrc7A" name="getPassword" visibility="package">
+      <ownedParameter xmi:id="_vN8jgIaIEeGMYKtjX0mJfA" type="_9Pq10IPrEeGfQv7RgI9ewQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_hYucAIXLEeGeifd1GWrc7A" name="getAccessLevel" visibility="package">
+      <ownedParameter xmi:id="_3vXK8IaIEeGMYKtjX0mJfA" type="_oJT-kIPUEeGfQv7RgI9ewQ" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_fmAPoIOmEeGfQv7RgI9ewQ" name="Cinema">
+    <ownedAttribute xmi:id="_hf92kIPVEeGfQv7RgI9ewQ" name="showings" visibility="package" type="_FaJbYIPVEeGfQv7RgI9ewQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-B73EIaaEeGKcf54A3lPjQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-B5a0IaaEeGKcf54A3lPjQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_qDtZQIPVEeGfQv7RgI9ewQ" name="movies" visibility="package" type="_urM9oIaaEeGKcf54A3lPjQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jMr2cIabEeGKcf54A3lPjQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jMiFcIabEeGKcf54A3lPjQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_sfmM4IPVEeGfQv7RgI9ewQ" name="screens" visibility="package" type="_urM9oIaaEeGKcf54A3lPjQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_k5xqYIabEeGKcf54A3lPjQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_k5unEIabEeGKcf54A3lPjQ"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_vtgcIIW-EeGeifd1GWrc7A" name="Cinema"/>
+    <ownedOperation xmi:id="_wMFOgIW-EeGeifd1GWrc7A" name="addMovie">
+      <ownedParameter xmi:id="_E_75EIadEeGKcf54A3lPjQ" name="title" visibility="package" type="_9Pq10IPrEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_L9Uh8IadEeGKcf54A3lPjQ" name="rating" visibility="package" type="_9Pq10IPrEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_RO-o0IadEeGKcf54A3lPjQ" name="director" visibility="package" type="_9Pq10IPrEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_VsIwoIadEeGKcf54A3lPjQ" name="actors" visibility="package" type="_9Pq10IPrEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_acVJMIadEeGKcf54A3lPjQ" name="synopsis" visibility="package" type="_9Pq10IPrEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_e9p_UIadEeGKcf54A3lPjQ" name="clip" visibility="package" type="_9Pq10IPrEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_ajWIcIajEeGKcf54A3lPjQ" type="_wkHTwIPsEeGfQv7RgI9ewQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_w7_ogIW-EeGeifd1GWrc7A" name="updateMovie">
+      <ownedParameter xmi:id="_Lp9EkIaeEeGKcf54A3lPjQ" name="title" visibility="package" type="_9Pq10IPrEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_QsH98IaeEeGKcf54A3lPjQ" name="rating" visibility="package" type="_9Pq10IPrEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_UFnCQIaeEeGKcf54A3lPjQ" name="director" visibility="package" type="_9Pq10IPrEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_XQOkIIaeEeGKcf54A3lPjQ" name="actors" visibility="package" type="_9Pq10IPrEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_e4WMEIaeEeGKcf54A3lPjQ" name="synopsis" visibility="package" type="_9Pq10IPrEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_mEcmYIaeEeGKcf54A3lPjQ" name="clip" visibility="package" type="_9Pq10IPrEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_VZO0AIajEeGKcf54A3lPjQ" type="_wkHTwIPsEeGfQv7RgI9ewQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_xeGQAIW-EeGeifd1GWrc7A" name="addMovie" visibility="private">
+      <ownedParameter xmi:id="_ECV9gIafEeGKcf54A3lPjQ" name="movieIn" visibility="package" type="_xXw1sIPVEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_QYVtAIajEeGKcf54A3lPjQ" type="_wkHTwIPsEeGfQv7RgI9ewQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_anBVIIW_EeGeifd1GWrc7A" name="removeMovie">
+      <ownedParameter xmi:id="_OyjXwIafEeGKcf54A3lPjQ" visibility="package" type="_9Pq10IPrEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_NFpNMIajEeGKcf54A3lPjQ" type="_wkHTwIPsEeGfQv7RgI9ewQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_bDGNIIW_EeGeifd1GWrc7A" name="getAllMovies">
+      <ownedParameter xmi:id="_ptmo8IafEeGKcf54A3lPjQ" type="_i2QWoIafEeGKcf54A3lPjQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_bizA4IW_EeGeifd1GWrc7A" name="getMovie">
+      <ownedParameter xmi:id="_rxMRUIafEeGKcf54A3lPjQ" type="_xXw1sIPVEeGfQv7RgI9ewQ" direction="return"/>
+      <ownedParameter xmi:id="__p1IUIaiEeGKcf54A3lPjQ" name="title" visibility="package" type="_9Pq10IPrEeGfQv7RgI9ewQ" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_cA88gIW_EeGeifd1GWrc7A" name="getScreen">
+      <ownedParameter xmi:id="_6jK34IafEeGKcf54A3lPjQ" name="screenNumber" visibility="package" type="_nCMa8IPTEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_trFDwIaiEeGKcf54A3lPjQ" type="_yh8J0IPVEeGfQv7RgI9ewQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_ci-rgIW_EeGeifd1GWrc7A" name="addShowing">
+      <ownedParameter xmi:id="_Nk_jAIagEeGKcf54A3lPjQ" name="screen" visibility="package" type="_yh8J0IPVEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_Sk-rEIagEeGKcf54A3lPjQ" name="movie" visibility="package" type="_xXw1sIPVEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_dciqgIagEeGKcf54A3lPjQ" name="showDate" visibility="package" type="_RW0xUIPsEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_kXCFgIaiEeGKcf54A3lPjQ" type="_wkHTwIPsEeGfQv7RgI9ewQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_7pDZYIXEEeGeifd1GWrc7A" name="addShowing" visibility="private">
+      <ownedParameter xmi:id="_tMgjUIagEeGKcf54A3lPjQ" name="showingIn" visibility="package" type="_FaJbYIPVEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_fQPK0IaiEeGKcf54A3lPjQ" type="_wkHTwIPsEeGfQv7RgI9ewQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_8K9MkIXEEeGeifd1GWrc7A" name="getShowing">
+      <ownedParameter xmi:id="_Gy35gIahEeGKcf54A3lPjQ" name="screenNumber" visibility="package" type="_nCMa8IPTEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_L8EA4IahEeGKcf54A3lPjQ" name="title" visibility="package" type="_9Pq10IPrEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_PntzQIahEeGKcf54A3lPjQ" name="showDate" visibility="package" type="_RW0xUIPsEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_a3isQIaiEeGKcf54A3lPjQ" type="_FaJbYIPVEeGfQv7RgI9ewQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_8s408IXEEeGeifd1GWrc7A" name="removeShowing">
+      <ownedParameter xmi:id="_cIHYwIahEeGKcf54A3lPjQ" name="showing" visibility="package" type="_FaJbYIPVEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_W7d4QIaiEeGKcf54A3lPjQ" type="_wkHTwIPsEeGfQv7RgI9ewQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_Q-25UIXFEeGeifd1GWrc7A" name="updateShowing">
+      <ownedParameter xmi:id="_m7Xf8IahEeGKcf54A3lPjQ" name="showing" visibility="package" type="_FaJbYIPVEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_qucI8IahEeGKcf54A3lPjQ" name="screen" visibility="package" type="_yh8J0IPVEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_wMzPEIahEeGKcf54A3lPjQ" name="movie" visibility="package" type="_xXw1sIPVEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_z6tEMIahEeGKcf54A3lPjQ" name="showDate" visibility="package" type="_RW0xUIPsEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_R41E0IaiEeGKcf54A3lPjQ" type="_wkHTwIPsEeGfQv7RgI9ewQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_RpubQIXFEeGeifd1GWrc7A" name="getAllShowings">
+      <ownedParameter xmi:id="_JyVe0IaiEeGKcf54A3lPjQ" type="_P8rwkIPWEeGfQv7RgI9ewQ" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_TkoTAIOnEeGfQv7RgI9ewQ" name="Booking">
+    <ownedAttribute xmi:id="_PYfHgIW8EeGeifd1GWrc7A" name="bookingAllocated" visibility="private" type="_wkHTwIPsEeGfQv7RgI9ewQ"/>
+    <ownedAttribute xmi:id="_-YR5YIW8EeGeifd1GWrc7A" name="ACCESS_LEVELS" type="_oJT-kIPUEeGfQv7RgI9ewQ"/>
+    <ownedAttribute xmi:id="_-0R44IW8EeGeifd1GWrc7A" name="bookingRef" visibility="private" type="_9Pq10IPrEeGfQv7RgI9ewQ"/>
+    <ownedOperation xmi:id="_HVGqcIW9EeGeifd1GWrc7A" name="Booking"/>
+    <ownedOperation xmi:id="_H-dwgIW9EeGeifd1GWrc7A" name="getShowing"/>
+    <ownedOperation xmi:id="_IeJWIIW9EeGeifd1GWrc7A" name="setShowing"/>
+    <ownedOperation xmi:id="_KFgVgIW9EeGeifd1GWrc7A" name="getPerson"/>
+    <ownedOperation xmi:id="_6Wx9YIW9EeGeifd1GWrc7A" name="setPerson"/>
+    <ownedOperation xmi:id="_6919YIW9EeGeifd1GWrc7A" name="getBookingRef"/>
+    <ownedOperation xmi:id="_8IpjoIW9EeGeifd1GWrc7A" name="setString"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_nCMa8IPTEeGfQv7RgI9ewQ" name="Int"/>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_oJT-kIPUEeGfQv7RgI9ewQ" name="ACCESS_LEVELS">
+    <ownedAttribute xmi:id="_lFptYIPhEeGfQv7RgI9ewQ" name="accessLevel" visibility="private"/>
+    <ownedLiteral xmi:id="_adOKkIPrEeGfQv7RgI9ewQ" name="MANAGER"/>
+    <ownedLiteral xmi:id="_bqWsEIPrEeGfQv7RgI9ewQ" name="CUSTOMER"/>
+    <ownedLiteral xmi:id="_6_XnIIPrEeGfQv7RgI9ewQ" name="NOTHING"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_FaJbYIPVEeGfQv7RgI9ewQ" name="Showing">
+    <ownedAttribute xmi:id="_cEDVkIPXEeGfQv7RgI9ewQ" name="movie" visibility="private" type="_xXw1sIPVEeGfQv7RgI9ewQ"/>
+    <ownedAttribute xmi:id="_dToHEIPXEeGfQv7RgI9ewQ" name="ShowDate" visibility="private" type="_RW0xUIPsEeGfQv7RgI9ewQ"/>
+    <ownedOperation xmi:id="_0lO_EIXJEeGeifd1GWrc7A" name="Showing">
+      <ownedParameter xmi:id="_faQusIaQEeGKcf54A3lPjQ" name="screen" visibility="package" type="_yh8J0IPVEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_mMgekIaQEeGKcf54A3lPjQ" name="movie" visibility="package" type="_xXw1sIPVEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_yEuCsIaQEeGKcf54A3lPjQ" name="showDate" visibility="package" type="_RW0xUIPsEeGfQv7RgI9ewQ" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_1Gdc0IXJEeGeifd1GWrc7A" name="getScreen">
+      <ownedParameter xmi:id="_CkF_MIaREeGKcf54A3lPjQ" name="screen" type="_yh8J0IPVEeGfQv7RgI9ewQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_1mN68IXJEeGeifd1GWrc7A" name="setScreen">
+      <ownedParameter xmi:id="_aKNU4IaREeGKcf54A3lPjQ" name="screen" visibility="package" type="_yh8J0IPVEeGfQv7RgI9ewQ" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_2BzDsIXJEeGeifd1GWrc7A" name="getMovie">
+      <ownedParameter xmi:id="_xpjN0IaJEeGMYKtjX0mJfA" type="_xXw1sIPVEeGfQv7RgI9ewQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_-JPr8IXJEeGeifd1GWrc7A" name="setMovie">
+      <ownedParameter xmi:id="_eqqBQIaREeGKcf54A3lPjQ" name="movie" visibility="package" type="_xXw1sIPVEeGfQv7RgI9ewQ" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_-hQjUIXJEeGeifd1GWrc7A" name="getShowDate">
+      <ownedParameter xmi:id="_28cq0IaJEeGMYKtjX0mJfA" type="_RW0xUIPsEeGfQv7RgI9ewQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_-4KncIXJEeGeifd1GWrc7A" name="setShowDate">
+      <ownedParameter xmi:id="_qLZgkIaREeGKcf54A3lPjQ" name="showDate" visibility="package" type="_RW0xUIPsEeGfQv7RgI9ewQ" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_HOTL8IXKEeGeifd1GWrc7A" name="getScreenNumber">
+      <ownedParameter xmi:id="_8N2TAIaJEeGMYKtjX0mJfA" type="_nCMa8IPTEeGfQv7RgI9ewQ" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_xXw1sIPVEeGfQv7RgI9ewQ" name="Movie">
+    <ownedAttribute xmi:id="_e2F4AIPaEeGfQv7RgI9ewQ" name="title" visibility="private" type="_9Pq10IPrEeGfQv7RgI9ewQ"/>
+    <ownedAttribute xmi:id="_gWtWMIPaEeGfQv7RgI9ewQ" name="rating" visibility="private" type="_9Pq10IPrEeGfQv7RgI9ewQ"/>
+    <ownedAttribute xmi:id="_hUVcEIPaEeGfQv7RgI9ewQ" name="director" visibility="private" type="_9Pq10IPrEeGfQv7RgI9ewQ"/>
+    <ownedAttribute xmi:id="_mTVFoIPaEeGfQv7RgI9ewQ" name="actors" visibility="private" type="_9Pq10IPrEeGfQv7RgI9ewQ"/>
+    <ownedAttribute xmi:id="_naZbYIPaEeGfQv7RgI9ewQ" name="synopsis" visibility="private" type="_9Pq10IPrEeGfQv7RgI9ewQ"/>
+    <ownedAttribute xmi:id="_qj5i8IPaEeGfQv7RgI9ewQ" name="clip" visibility="private" type="_9Pq10IPrEeGfQv7RgI9ewQ"/>
+    <ownedOperation xmi:id="_rf22UIXGEeGeifd1GWrc7A" name="Movie">
+      <ownedParameter xmi:id="_dEU_0IaVEeGKcf54A3lPjQ" name="titleIn" visibility="package" type="_9Pq10IPrEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_hZ1AcIaVEeGKcf54A3lPjQ" name="ratingIn" visibility="package" type="_9Pq10IPrEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_mJQkAIaVEeGKcf54A3lPjQ" name="directorIn" visibility="package" type="_9Pq10IPrEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_7egDQIaVEeGKcf54A3lPjQ" name="actorsIn" visibility="package" type="_9Pq10IPrEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_B4pcMIaWEeGKcf54A3lPjQ" name="synopsisIn" visibility="package" type="_9Pq10IPrEeGfQv7RgI9ewQ" isUnique="false"/>
+      <ownedParameter xmi:id="_GRwKcIaWEeGKcf54A3lPjQ" name="clipIn" type="_9Pq10IPrEeGfQv7RgI9ewQ" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_sN_usIXGEeGeifd1GWrc7A" name="equals">
+      <ownedParameter xmi:id="_QjDbIIaWEeGKcf54A3lPjQ" name="o" visibility="package" type="_Qm56AYaOEeGKcf54A3lPjQ" isUnique="false"/>
+      <ownedParameter xmi:id="_cWOHMIaWEeGKcf54A3lPjQ" type="_wkHTwIPsEeGfQv7RgI9ewQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_suTmcIXGEeGeifd1GWrc7A" name="toString">
+      <ownedParameter xmi:id="_kfzdcIaWEeGKcf54A3lPjQ" type="_9Pq10IPrEeGfQv7RgI9ewQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_tTSi0IXGEeGeifd1GWrc7A" name="getTitle">
+      <ownedParameter xmi:id="_mXVm0IaWEeGKcf54A3lPjQ" type="_9Pq10IPrEeGfQv7RgI9ewQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_uL93QIXGEeGeifd1GWrc7A" name="getRating">
+      <ownedParameter xmi:id="_oOFtEIaWEeGKcf54A3lPjQ" type="_9Pq10IPrEeGfQv7RgI9ewQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_ulkDAIXGEeGeifd1GWrc7A" name="getDirector">
+      <ownedParameter xmi:id="_p1VXsIaWEeGKcf54A3lPjQ" type="_9Pq10IPrEeGfQv7RgI9ewQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_vHr4oIXGEeGeifd1GWrc7A" name="getActors">
+      <ownedParameter xmi:id="_rZMXIIaWEeGKcf54A3lPjQ" type="_9Pq10IPrEeGfQv7RgI9ewQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_9x9UsIXGEeGeifd1GWrc7A" name="getSynopsis">
+      <ownedParameter xmi:id="_tWntIIaWEeGKcf54A3lPjQ" type="_9Pq10IPrEeGfQv7RgI9ewQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_-PPGkIXGEeGeifd1GWrc7A" name="getClip">
+      <ownedParameter xmi:id="_vBghoIaWEeGKcf54A3lPjQ" type="_9Pq10IPrEeGfQv7RgI9ewQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_-shfgIXGEeGeifd1GWrc7A" name="setRating">
+      <ownedParameter xmi:id="__fBc8IaWEeGKcf54A3lPjQ" name="rating" visibility="package" type="_9Pq10IPrEeGfQv7RgI9ewQ" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_I-XiwIXHEeGeifd1GWrc7A" name="setDirector">
+      <ownedParameter xmi:id="_FRDtAIaXEeGKcf54A3lPjQ" name="director" visibility="package" type="_9Pq10IPrEeGfQv7RgI9ewQ" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_JdnDgIXHEeGeifd1GWrc7A" name="setActors">
+      <ownedParameter xmi:id="_TgZgkIaXEeGKcf54A3lPjQ" name="actors" visibility="package" type="_9Pq10IPrEeGfQv7RgI9ewQ" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_J7He4IXHEeGeifd1GWrc7A" name="setSynopsis">
+      <ownedParameter xmi:id="_Yah4QIaXEeGKcf54A3lPjQ" name="synopsis" visibility="package" type="_9Pq10IPrEeGfQv7RgI9ewQ" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_QWXEAIXHEeGeifd1GWrc7A" name="setSynopsis" visibility="public">
+      <ownedParameter xmi:id="_qp-EMIaXEeGKcf54A3lPjQ" name="clip" visibility="package" type="_9Pq10IPrEeGfQv7RgI9ewQ" isUnique="false"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_yh8J0IPVEeGfQv7RgI9ewQ" name="Screen">
+    <ownedAttribute xmi:id="_ARakQIXIEeGeifd1GWrc7A" name="title" visibility="private" type="_9Pq10IPrEeGfQv7RgI9ewQ"/>
+    <ownedAttribute xmi:id="_B86cwIXIEeGeifd1GWrc7A" name="rating" visibility="private" type="_9Pq10IPrEeGfQv7RgI9ewQ"/>
+    <ownedAttribute xmi:id="_Dl2JcIXIEeGeifd1GWrc7A" name="screenNumber" visibility="private" type="_nCMa8IPTEeGfQv7RgI9ewQ"/>
+    <ownedAttribute xmi:id="_Ed82IIXIEeGeifd1GWrc7A" name="allocated" visibility="private" type="_wkHTwIPsEeGfQv7RgI9ewQ"/>
+    <ownedAttribute xmi:id="_aaN5IIXIEeGeifd1GWrc7A" name="seats" visibility="protected" type="_OFmUgYaGEeGMYKtjX0mJfA"/>
+    <ownedAttribute xmi:id="_a4d7YIXIEeGeifd1GWrc7A" name="bookings" visibility="protected" type="_OFmUgYaGEeGMYKtjX0mJfA"/>
+    <ownedOperation xmi:id="_Z3oJcIXIEeGeifd1GWrc7A" name="Screen">
+      <ownedParameter xmi:id="_Wd6z4IaSEeGKcf54A3lPjQ" name="screenNumberIn" visibility="package" type="_nCMa8IPTEeGfQv7RgI9ewQ" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_z4LhQIXIEeGeifd1GWrc7A" name="getScreenNumber">
+      <ownedParameter xmi:id="_Xd2V8IaJEeGMYKtjX0mJfA" type="_nCMa8IPTEeGfQv7RgI9ewQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0TCRQIXIEeGeifd1GWrc7A" name="isAllocated">
+      <ownedParameter xmi:id="_ZehNMIaJEeGMYKtjX0mJfA" type="_wkHTwIPsEeGfQv7RgI9ewQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0vN28IXIEeGeifd1GWrc7A" name="book"/>
+    <ownedOperation xmi:id="_1UThAIXIEeGeifd1GWrc7A" name="available"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_P8rwkIPWEeGfQv7RgI9ewQ" name="ArrayList">
+    <ownedAttribute xmi:id="_kGej0IPrEeGfQv7RgI9ewQ" name="Property1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="__3jYsIPYEeGfQv7RgI9ewQ" name="java.util.Scanner"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_J2DMsIPaEeGfQv7RgI9ewQ" name="java.io.Serializable"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_CP5PcIPhEeGfQv7RgI9ewQ" name="PreLoad">
+    <ownedAttribute xmi:id="_RyrA0IPhEeGfQv7RgI9ewQ" name="FILENAME" visibility="private" isStatic="true" type="_9Pq10IPrEeGfQv7RgI9ewQ"/>
+    <ownedOperation xmi:id="_ufQKMIXHEeGeifd1GWrc7A" name="main"/>
+    <ownedOperation xmi:id="_u8Mk4IXHEeGeifd1GWrc7A" name="save" visibility="private">
+      <ownedParameter xmi:id="_zfklMIaSEeGKcf54A3lPjQ" name="sys" visibility="package" type="__mdmUIOkEeGfQv7RgI9ewQ" isUnique="false"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_9Pq10IPrEeGfQv7RgI9ewQ" name="String"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_RW0xUIPsEeGfQv7RgI9ewQ" name="Date"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_uqqe0IPsEeGfQv7RgI9ewQ" name="Real"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_wkHTwIPsEeGfQv7RgI9ewQ" name="Boolean"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_EkDwEIXGEeGeifd1GWrc7A" name="FileReader">
+    <ownedOperation xmi:id="_UIEQgIXGEeGeifd1GWrc7A" name="printFile" isStatic="true">
+      <ownedParameter xmi:id="_Ihz2oIaYEeGKcf54A3lPjQ" name="filename" visibility="package" type="_9Pq10IPrEeGfQv7RgI9ewQ" isUnique="false"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_rBKyYIXKEeGeifd1GWrc7A" name="Utilities">
+    <ownedAttribute xmi:id="_wDSBYIXKEeGeifd1GWrc7A" name="FILENAME" visibility="private" isStatic="true" type="_9Pq10IPrEeGfQv7RgI9ewQ"/>
+    <ownedOperation xmi:id="_xOM8YIXKEeGeifd1GWrc7A" name="initialise" isStatic="true">
+      <ownedParameter xmi:id="_Ho0aIIaNEeGMYKtjX0mJfA" type="_Qm56AYaOEeGKcf54A3lPjQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_yRx5QIXKEeGeifd1GWrc7A" name="save" isStatic="true">
+      <ownedParameter xmi:id="_ykY2sIaPEeGKcf54A3lPjQ" name="sys" visibility="package" type="_Qm56AYaOEeGKcf54A3lPjQ" isUnique="false"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_HRf6MIYoEeGwdfBoX3aNQA" name="Cinema">
+    <node xmi:type="uml:InitialNode" xmi:id="_LPbIUIYoEeGwdfBoX3aNQA" name="InitialNode1" outgoing="_VVvg8IY8EeGwdfBoX3aNQA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_EtI1IIYqEeGwdfBoX3aNQA" name="Utilities.initialise" outgoing="_B9F9IIYvEeGwdfBoX3aNQA _vYIwAIY1EeGwdfBoX3aNQA" incoming="_VVvg8IY8EeGwdfBoX3aNQA">
+      <inputValue xmi:id="_0dK2gIY9EeGwdfBoX3aNQA" name="serial data" incoming="_0dxTcIY9EeGwdfBoX3aNQA" type="__mdmUIOkEeGfQv7RgI9ewQ"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_X9fZkIYsEeGwdfBoX3aNQA" name="LoginScreen" outgoing="_8m-awIYzEeGwdfBoX3aNQA _j4kh4YbkEeG1SNT27m6Q2g" incoming="_GQym8IYvEeGwdfBoX3aNQA _IXCIcIY0EeGwdfBoX3aNQA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_w7qccIYuEeGwdfBoX3aNQA" name="user matched" outgoing="_Ayh1MIY0EeGwdfBoX3aNQA" incoming="_8m-awIYzEeGwdfBoX3aNQA"/>
+    <node xmi:type="uml:AcceptEventAction" xmi:id="_6yTxcIYuEeGwdfBoX3aNQA" name="Scanner(system.ini)" outgoing="_GQym8IYvEeGwdfBoX3aNQA" incoming="_B9F9IIYvEeGwdfBoX3aNQA _j4kh4YbkEeG1SNT27m6Q2g"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_r8EjsIYzEeGwdfBoX3aNQA" name="DecisionNode1" outgoing="_IXCIcIY0EeGwdfBoX3aNQA _mElWcIY0EeGwdfBoX3aNQA" incoming="_Ayh1MIY0EeGwdfBoX3aNQA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_bypMkIY0EeGwdfBoX3aNQA" name="performAction" outgoing="_BdsKsIY3EeGwdfBoX3aNQA _I9H-cIY8EeGwdfBoX3aNQA" incoming="_mElWcIY0EeGwdfBoX3aNQA"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_gP7awIY1EeGwdfBoX3aNQA" name="BookingSystem Object" incoming="_vYIwAIY1EeGwdfBoX3aNQA">
+      <result xmi:id="_gQW4kIY1EeGwdfBoX3aNQA" name="result"/>
+    </node>
+    <node xmi:type="uml:ConditionalNode" xmi:id="_vmanIIY2EeGwdfBoX3aNQA" name="ConditionalNode1">
+      <node xmi:type="uml:SequenceNode" xmi:id="_M4dk4IY3EeGwdfBoX3aNQA" name="SequenceNode1"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_Tg-xAIY3EeGwdfBoX3aNQA" name="UserManagement" incoming="_K0mdcIY8EeGwdfBoX3aNQA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_V_D9AIY3EeGwdfBoX3aNQA" name="ScreenManagement"/>
+    </node>
+    <node xmi:type="uml:ConditionalNode" xmi:id="_gHnr8IY4EeGwdfBoX3aNQA" name="ConditionalNode2">
+      <node xmi:type="uml:OpaqueAction" xmi:id="_jcjAYIY4EeGwdfBoX3aNQA" name="Customer" outgoing="_QKrxUIY8EeGwdfBoX3aNQA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_i1eZUIY4EeGwdfBoX3aNQA" name="Manager" outgoing="_K0mdcIY8EeGwdfBoX3aNQA" incoming="_I9H-cIY8EeGwdfBoX3aNQA"/>
+    </node>
+    <node xmi:type="uml:ConditionalNode" xmi:id="_gmeLIIY4EeGwdfBoX3aNQA" name="ConditionalNode3">
+      <node xmi:type="uml:OpaqueAction" xmi:id="_Hocf8IY7EeGwdfBoX3aNQA" name="ShowShowings">
+        <ownedComment xmi:id="_X-80UIY7EeGwdfBoX3aNQA">
+          <body>ShowShowings</body>
+        </ownedComment>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_IEossIY7EeGwdfBoX3aNQA" name="CinemaFacilities"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_8nVi8IY6EeGwdfBoX3aNQA" name="ShowMovies" incoming="_QKrxUIY8EeGwdfBoX3aNQA">
+        <ownedComment xmi:id="_DwU-4IY7EeGwdfBoX3aNQA">
+          <body>ShowMovies</body>
+        </ownedComment>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_R4HY8IY7EeGwdfBoX3aNQA" name="CinemaPrices"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_TgUF0IY7EeGwdfBoX3aNQA" name="PaymentsRefundsInfo"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_o8UUYIY7EeGwdfBoX3aNQA" name="Booking"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_p12kcIY7EeGwdfBoX3aNQA" name="AmendPersonalDetails"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_Bi2lQIY8EeGwdfBoX3aNQA" name="EXIT" outgoing="_UngEMIbnEeG1SNT27m6Q2g"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_GXpt0IY4EeGwdfBoX3aNQA" name="BookingManagement"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_K-QskIY4EeGwdfBoX3aNQA" name="EXIT" outgoing="_PSo4UIbnEeG1SNT27m6Q2g"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_UPNI8IY3EeGwdfBoX3aNQA" name="MovieManagement"/>
+    <node xmi:type="uml:DataStoreNode" xmi:id="_BV8VMIY9EeGwdfBoX3aNQA" name="system.ser" outgoing="_0dxTcIY9EeGwdfBoX3aNQA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_z2R7wIbkEeG1SNT27m6Q2g" name="Utilities.save" incoming="_PSo4UIbnEeG1SNT27m6Q2g _UngEMIbnEeG1SNT27m6Q2g">
+      <ownedComment xmi:id="_UMXgAIbqEeG1SNT27m6Q2g">
+        <body>Utilities.save</body>
+      </ownedComment>
+      <outputValue xmi:id="_gpK0YIbpEeG1SNT27m6Q2g" name="serialized data" outgoing="_gqFaYIbpEeG1SNT27m6Q2g" type="__mdmUIOkEeGfQv7RgI9ewQ"/>
+    </node>
+    <node xmi:type="uml:DataStoreNode" xmi:id="_wBc34IbnEeG1SNT27m6Q2g" name="system.ser" incoming="_gqFaYIbpEeG1SNT27m6Q2g"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_B9F9IIYvEeGwdfBoX3aNQA" name="ControlFlow1" source="_EtI1IIYqEeGwdfBoX3aNQA" target="_6yTxcIYuEeGwdfBoX3aNQA">
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_B9LcsIYvEeGwdfBoX3aNQA"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_GQym8IYvEeGwdfBoX3aNQA" name="ControlFlow2" source="_6yTxcIYuEeGwdfBoX3aNQA" target="_X9fZkIYsEeGwdfBoX3aNQA">
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_GQzOAYYvEeGwdfBoX3aNQA"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_8m-awIYzEeGwdfBoX3aNQA" name="ControlFlow3" source="_X9fZkIYsEeGwdfBoX3aNQA" target="_w7qccIYuEeGwdfBoX3aNQA">
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_8nAP8IYzEeGwdfBoX3aNQA"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Ayh1MIY0EeGwdfBoX3aNQA" name="ControlFlow4" source="_w7qccIYuEeGwdfBoX3aNQA" target="_r8EjsIYzEeGwdfBoX3aNQA">
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_AyjDUIY0EeGwdfBoX3aNQA"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_IXCIcIY0EeGwdfBoX3aNQA" name="ControlFlow5" source="_r8EjsIYzEeGwdfBoX3aNQA" target="_X9fZkIYsEeGwdfBoX3aNQA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_IXDWkIY0EeGwdfBoX3aNQA"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_IXDWkYY0EeGwdfBoX3aNQA"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_mElWcIY0EeGwdfBoX3aNQA" name="ControlFlow6" source="_r8EjsIYzEeGwdfBoX3aNQA" target="_bypMkIY0EeGwdfBoX3aNQA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_mEl9gIY0EeGwdfBoX3aNQA" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_mEl9gYY0EeGwdfBoX3aNQA"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_vYIwAIY1EeGwdfBoX3aNQA" name="ControlFlow8" source="_EtI1IIYqEeGwdfBoX3aNQA" target="_gP7awIY1EeGwdfBoX3aNQA">
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_vYJ-IIY1EeGwdfBoX3aNQA"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BdsKsIY3EeGwdfBoX3aNQA" name="ControlFlow9" source="_bypMkIY0EeGwdfBoX3aNQA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_BdtY0IY3EeGwdfBoX3aNQA" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BdtY0YY3EeGwdfBoX3aNQA"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_I9H-cIY8EeGwdfBoX3aNQA" name="ControlFlow10" source="_bypMkIY0EeGwdfBoX3aNQA" target="_i1eZUIY4EeGwdfBoX3aNQA">
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_I9JMkIY8EeGwdfBoX3aNQA"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_K0mdcIY8EeGwdfBoX3aNQA" name="ControlFlow11" source="_i1eZUIY4EeGwdfBoX3aNQA" target="_Tg-xAIY3EeGwdfBoX3aNQA">
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_K0nrkYY8EeGwdfBoX3aNQA"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_QKrxUIY8EeGwdfBoX3aNQA" name="ControlFlow12" source="_jcjAYIY4EeGwdfBoX3aNQA" target="_8nVi8IY6EeGwdfBoX3aNQA">
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_QKtmgYY8EeGwdfBoX3aNQA"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_VVvg8IY8EeGwdfBoX3aNQA" name="ControlFlow13" source="_LPbIUIYoEeGwdfBoX3aNQA" target="_EtI1IIYqEeGwdfBoX3aNQA">
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_VVwvEYY8EeGwdfBoX3aNQA"/>
+    </edge>
+    <edge xmi:type="uml:ObjectFlow" xmi:id="_0dxTcIY9EeGwdfBoX3aNQA" name="ObjectFlow1" source="_BV8VMIY9EeGwdfBoX3aNQA" target="_0dK2gIY9EeGwdfBoX3aNQA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_j4kh4YbkEeG1SNT27m6Q2g" name="ControlFlow14" source="_X9fZkIYsEeGwdfBoX3aNQA" target="_6yTxcIYuEeGwdfBoX3aNQA">
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_j5AmwYbkEeG1SNT27m6Q2g"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PSo4UIbnEeG1SNT27m6Q2g" name="ControlFlow15" source="_K-QskIY4EeGwdfBoX3aNQA" target="_z2R7wIbkEeG1SNT27m6Q2g">
+      <guard xmi:type="uml:LiteralString" xmi:id="_2LCy8IPfEeGfQv7RgI9ewQ">
+        <value xsi:nil="true"/>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_PStJwIbnEeG1SNT27m6Q2g"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_UngEMIbnEeG1SNT27m6Q2g" name="ControlFlow16" source="_Bi2lQIY8EeGwdfBoX3aNQA" target="_z2R7wIbkEeG1SNT27m6Q2g">
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_UnjHgIbnEeG1SNT27m6Q2g"/>
+    </edge>
+    <edge xmi:type="uml:ObjectFlow" xmi:id="_gqFaYIbpEeG1SNT27m6Q2g" name="ObjectFlow2" source="_gpK0YIbpEeG1SNT27m6Q2g" target="_wBc34IbnEeG1SNT27m6Q2g"/>
+    <group xmi:type="uml:LoopNode" xmi:id="_9J9hIIY1EeGwdfBoX3aNQA" name="LoopNode1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_OFmUgYaGEeGMYKtjX0mJfA" name="HashMap"/>
+  <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_Zujs8IaMEeGMYKtjX0mJfA" name="Object" classifier="__mdmUIOkEeGfQv7RgI9ewQ"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_Qm56AYaOEeGKcf54A3lPjQ" name="Object"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_urM9oIaaEeGKcf54A3lPjQ" name="Map"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_i2QWoIafEeGKcf54A3lPjQ" name="Set"/>
+</uml:Model>

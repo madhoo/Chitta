@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_bLsfYIWGEeGImcJeT7_ALw" name="Model">
+  <packageImport xmi:id="_bLsfYYWGEeGImcJeT7_ALw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_hvgKoIWGEeGImcJeT7_ALw" name="Services">
+    <ownedAttribute xmi:id="_nk-wQIWGEeGImcJeT7_ALw" name="description"/>
+    <ownedAttribute xmi:id="_oo32MIWGEeGImcJeT7_ALw" name="price"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_4jecQIWHEeGImcJeT7_ALw" name="Client">
+    <ownedAttribute xmi:id="_Jyd30IWIEeGImcJeT7_ALw" name="name"/>
+    <ownedAttribute xmi:id="_KQ6HUIWIEeGImcJeT7_ALw" name="address"/>
+    <ownedAttribute xmi:id="_Kt92wIWIEeGImcJeT7_ALw" name="telephone"/>
+    <ownedAttribute xmi:id="_LHfKAIWIEeGImcJeT7_ALw" name="fax"/>
+    <ownedAttribute xmi:id="_M1mXAIWbEeGKJsjCL8Q4kA" name="order" type="_pQ-GEIWIEeGImcJeT7_ALw" isUnique="false" association="_M1ozQIWbEeGKJsjCL8Q4kA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_M1nlIYWbEeGKJsjCL8Q4kA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M1nlIIWbEeGKJsjCL8Q4kA"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_fiRMIIWIEeGImcJeT7_ALw" name="staff">
+    <generalization xmi:id="_as9ucIWmEeGKJsjCL8Q4kA" general="_GYfIoIWmEeGKJsjCL8Q4kA"/>
+    <ownedAttribute xmi:id="_PG23sIWKEeGImcJeT7_ALw" name="name"/>
+    <ownedAttribute xmi:id="_PcAoUIWKEeGImcJeT7_ALw" name="address"/>
+    <ownedAttribute xmi:id="_P7BfkIWKEeGImcJeT7_ALw" name="salary"/>
+    <ownedAttribute xmi:id="_U-63QIWKEeGImcJeT7_ALw" name="taxCode"/>
+    <ownedAttribute xmi:id="_XW6pYIWKEeGImcJeT7_ALw" name="telephone"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_pQ-GEIWIEeGImcJeT7_ALw" name="Order">
+    <ownedAttribute xmi:id="_GkviIIWJEeGImcJeT7_ALw" name="client"/>
+    <ownedAttribute xmi:id="_2xdaIIWJEeGImcJeT7_ALw" name="estimatedNoOfStaff"/>
+    <ownedAttribute xmi:id="_7jCU8IWYEeGKJsjCL8Q4kA" name="equipmentRequired"/>
+    <ownedAttribute xmi:id="_GFlbwIWbEeGKJsjCL8Q4kA" name="client" type="_4jecQIWHEeGImcJeT7_ALw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GFmp4YWbEeGKJsjCL8Q4kA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GFmp4IWbEeGKJsjCL8Q4kA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ugi_8IWhEeGKJsjCL8Q4kA" name="estimatedPrice"/>
+    <ownedAttribute xmi:id="_3fkJYIWhEeGKJsjCL8Q4kA" name="quotedPrice"/>
+    <ownedAttribute xmi:id="_6-X9IIWiEeGKJsjCL8Q4kA" name="depositPaid"/>
+    <ownedAttribute xmi:id="_c9nX4IWlEeGKJsjCL8Q4kA" name="orderStatus"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_GAO_gIWMEeGImcJeT7_ALw" name="Schedule">
+    <generalization xmi:id="_DcUhMIWgEeGKJsjCL8Q4kA" general="_6uIRwIWOEeGKJsjCL8Q4kA"/>
+    <ownedAttribute xmi:id="_pHNZMIWgEeGKJsjCL8Q4kA" name="staff" type="_fiRMIIWIEeGImcJeT7_ALw" association="_pHOAQIWgEeGKJsjCL8Q4kA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pHNZMYWgEeGKJsjCL8Q4kA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pHNZMoWgEeGKJsjCL8Q4kA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_sJQN4IWgEeGKJsjCL8Q4kA" name="equipment" type="_e4y3sIWQEeGKJsjCL8Q4kA" association="_sJRcAIWgEeGKJsjCL8Q4kA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sJQN4YWgEeGKJsjCL8Q4kA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sJQN4oWgEeGKJsjCL8Q4kA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Cpxo8IWrEeGKJsjCL8Q4kA" name="scheduleNumber"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_6uIRwIWOEeGKJsjCL8Q4kA" name="Shifts">
+    <generalization xmi:id="_Cm5ykIWUEeGKJsjCL8Q4kA" general="_3v9eMIWTEeGKJsjCL8Q4kA"/>
+    <ownedAttribute xmi:id="_BxPIIIWPEeGKJsjCL8Q4kA" name="shiftNumber"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_e4y3sIWQEeGKJsjCL8Q4kA" name="equipment">
+    <generalization xmi:id="_KhCAcIWoEeGKJsjCL8Q4kA" general="_uKjTEIWnEeGKJsjCL8Q4kA"/>
+    <ownedAttribute xmi:id="_e2v8YIWoEeGKJsjCL8Q4kA" name="chargeRate"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_BFdVUIWREeGKJsjCL8Q4kA" name="Domestic">
+    <generalization xmi:id="_OuJbwIWVEeGKJsjCL8Q4kA" general="_4jecQIWHEeGImcJeT7_ALw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_CbNnUIWREeGKJsjCL8Q4kA" name="Commercial">
+    <generalization xmi:id="_N9CH4IWVEeGKJsjCL8Q4kA" general="_4jecQIWHEeGImcJeT7_ALw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_3v9eMIWTEeGKJsjCL8Q4kA" name="workingDays">
+    <generalization xmi:id="_swC8kIWqEeGKJsjCL8Q4kA" general="_N9LFQIWqEeGKJsjCL8Q4kA"/>
+    <ownedAttribute xmi:id="_ENIJgIWUEeGKJsjCL8Q4kA" name="date"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_OKG9wIWZEeGKJsjCL8Q4kA" name="equipment1">
+    <generalization xmi:id="_WdJK8IWZEeGKJsjCL8Q4kA" general="_e4y3sIWQEeGKJsjCL8Q4kA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_QRuKgIWZEeGKJsjCL8Q4kA" name="equipmentN">
+    <generalization xmi:id="_VgmDIIWZEeGKJsjCL8Q4kA" general="_e4y3sIWQEeGKJsjCL8Q4kA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:AssociationClass" xmi:id="_M1ozQIWbEeGKJsjCL8Q4kA" name="Booking" memberEnd="_M1ozQYWbEeGKJsjCL8Q4kA _M1mXAIWbEeGKJsjCL8Q4kA">
+    <ownedAttribute xmi:id="_z9LPcIWbEeGKJsjCL8Q4kA" name="startDateTime"/>
+    <ownedAttribute xmi:id="_2oxTAIWbEeGKJsjCL8Q4kA" name="startDateTime"/>
+    <ownedAttribute xmi:id="_3dbDEIWbEeGKJsjCL8Q4kA" name="bokkingStatus"/>
+    <ownedAttribute xmi:id="_AUD6UIWhEeGKJsjCL8Q4kA" name="schedule" type="_GAO_gIWMEeGImcJeT7_ALw" association="_AUFvgIWhEeGKJsjCL8Q4kA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AUD6UYWhEeGKJsjCL8Q4kA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AUD6UoWhEeGKJsjCL8Q4kA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_j37mAIWiEeGKJsjCL8Q4kA" name="service"/>
+    <ownedAttribute xmi:id="_vFGCAIWiEeGKJsjCL8Q4kA" name="services" type="_hvgKoIWGEeGImcJeT7_ALw" association="_vFGpEIWiEeGKJsjCL8Q4kA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vFGCAYWiEeGKJsjCL8Q4kA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vFGCAoWiEeGKJsjCL8Q4kA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2O3hEIWiEeGKJsjCL8Q4kA" name="price"/>
+    <ownedEnd xmi:id="_M1ozQYWbEeGKJsjCL8Q4kA" name="client" type="_4jecQIWHEeGImcJeT7_ALw" association="_M1ozQIWbEeGKJsjCL8Q4kA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_M1ozQoWbEeGKJsjCL8Q4kA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M1ozQ4WbEeGKJsjCL8Q4kA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_pHOAQIWgEeGKJsjCL8Q4kA" name="schedule_staff_1" memberEnd="_pHOAQYWgEeGKJsjCL8Q4kA _pHNZMIWgEeGKJsjCL8Q4kA">
+    <ownedEnd xmi:id="_pHOAQYWgEeGKJsjCL8Q4kA" name="schedule" type="_GAO_gIWMEeGImcJeT7_ALw" association="_pHOAQIWgEeGKJsjCL8Q4kA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pHOAQoWgEeGKJsjCL8Q4kA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pHOAQ4WgEeGKJsjCL8Q4kA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_sJRcAIWgEeGKJsjCL8Q4kA" name="schedule_equipment_1" memberEnd="_sJRcAYWgEeGKJsjCL8Q4kA _sJQN4IWgEeGKJsjCL8Q4kA">
+    <ownedEnd xmi:id="_sJRcAYWgEeGKJsjCL8Q4kA" name="schedule" type="_GAO_gIWMEeGImcJeT7_ALw" association="_sJRcAIWgEeGKJsjCL8Q4kA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sJRcAoWgEeGKJsjCL8Q4kA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sJRcA4WgEeGKJsjCL8Q4kA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_AUFvgIWhEeGKJsjCL8Q4kA" name="booking_schedule_1" memberEnd="_AUFvgYWhEeGKJsjCL8Q4kA _AUD6UIWhEeGKJsjCL8Q4kA">
+    <ownedEnd xmi:id="_AUFvgYWhEeGKJsjCL8Q4kA" name="booking" type="_M1ozQIWbEeGKJsjCL8Q4kA" association="_AUFvgIWhEeGKJsjCL8Q4kA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AUFvgoWhEeGKJsjCL8Q4kA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AUFvg4WhEeGKJsjCL8Q4kA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_vFGpEIWiEeGKJsjCL8Q4kA" name="booking_services_1" memberEnd="_vFGpEYWiEeGKJsjCL8Q4kA _vFGCAIWiEeGKJsjCL8Q4kA">
+    <ownedEnd xmi:id="_vFGpEYWiEeGKJsjCL8Q4kA" name="booking" type="_M1ozQIWbEeGKJsjCL8Q4kA" association="_vFGpEIWiEeGKJsjCL8Q4kA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vFGpEoWiEeGKJsjCL8Q4kA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vFGpE4WiEeGKJsjCL8Q4kA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_GYfIoIWmEeGKJsjCL8Q4kA" name="StaffUnavailability">
+    <ownedAttribute xmi:id="_QhFJQIWmEeGKJsjCL8Q4kA" name="date"/>
+    <ownedAttribute xmi:id="_Te4XIIWmEeGKJsjCL8Q4kA" name="reason"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_uKjTEIWnEeGKJsjCL8Q4kA" name="euipmentUnavailability">
+    <ownedAttribute xmi:id="_OtbIYIWoEeGKJsjCL8Q4kA" name="date"/>
+    <ownedAttribute xmi:id="_Qq46oIWoEeGKJsjCL8Q4kA" name="reason"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_N9LFQIWqEeGKJsjCL8Q4kA" name="workingTimes">
+    <ownedAttribute xmi:id="_YFrmUIWqEeGKJsjCL8Q4kA" name="startTime"/>
+    <ownedAttribute xmi:id="_YlXL8IWqEeGKJsjCL8Q4kA" name="endTime"/>
+    <ownedAttribute xmi:id="_cPjlwIWqEeGKJsjCL8Q4kA" name="availabilityStatus"/>
+    <ownedAttribute xmi:id="_mmAcMIWqEeGKJsjCL8Q4kA" name="reasonForNonAvailability"/>
+  </packagedElement>
+</uml:Model>
