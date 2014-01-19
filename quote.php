@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Example Tabs</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<style type="text/css" media="screen">@import "./styles/basic.css";</style>
+	<style type="text/css" media="screen">@import "./styles/tabs.css";</style>
+	<style type="text/css" media="screen">@import "./styles/menu-h.css";</style>
+</head>
+
+<body>
+	<h1><a href="index.html">Chitta</a></h1>
+	<br />
+	<br />
+	<!--#include virtual="./includes/menu-h.inc"-->
+	<br />
+	<!--#include file="./includes/navbar.inc"-->
+	<div id="header">
+	<ul id="primary">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="about.html" class="current">About Us</a>
+			<ul id="secondary">
+				<li><a href="philosophy.html">Our Philosophy</a></li>
+				<li><a href="employment.html">Employment Opportunities</a></li>
+				<li><a href="processes.html">Our Processes</a></li>
+				<li><span>Get a Quote</span></li>
+			</ul>
+		</li>
+		<li><a href="portfolio.html">Our Portfolio</a></li>
+		<li><a href="contact.html">Contact Us</a></li>
+	</ul>
+	</div>
+	<div id="main">
+		<div id="contents">
+			<h2>Get a Quote</h2>			
+			<p class="note">Aenean egestas, dolor ut consectetuer pulvinar, mauris ante volutpat leo.</p>
+			<p>Sed purus neque, suscipit vitae, cursus vitae, porttitor non, dui. Mauris volutpat dui vitae sapien. Duis laoreet nibh vitae sem. Phasellus ornare. Morbi sollicitudin mi ut nibh. Morbi egestas elementum tellus.</p>
+			<p>Suspendisse magna dui, porta in, condimentum at, molestie nec, augue. Quisque vulputate facilisis ipsum.  Aenean sollicitudin quam sed ante. Donec at nunc. In hac habitasse platea dictumst. Suspendisse quis lorem sit amet eros congue volutpat. Nam laoreet ultricies pede. Nulla vestibulum, pede eget varius vestibulum, nisl mi aliquet nisl, eget eleifend quam dui faucibus tortor. Maecenas justo. In lacus nisl, tempus at, aliquam nec, ornare in, metus. Maecenas hendrerit mauris vitae purus. Cras id sem.</p>
+			<p>Curabitur vel urna vitae nunc bibendum porttitor. Nam tortor quam, luctus id, convallis sed, rutrum ac, ante. Proin euismod lacus vitae elit. Nullam vel diam in metus consectetuer facilisis.</p>
+			<p>In mauris enim, suscipit a, consequat quis, porta ut, diam. Vivamus tempor. Donec nec enim quis ante ullamcorper mollis. Praesent dictum. Donec arcu arcu, tincidunt a, placerat sit amet, porta eget, erat. Aliquam erat volutpat. Aenean egestas, dolor ut consectetuer pulvinar, mauris ante volutpat leo, non pulvinar erat justo vitae mauris. Donec laoreet dui at quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris id libero. Morbi luctus sapien vitae dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam pharetra vestibulum leo. Maecenas magna velit, porta eu, viverra quis, cursus non, sapien.</p>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur viverra ultrices ante. Aliquam nec lectus. Praesent vitae risus. Aenean vulputate sapien et leo. Nullam euismod tortor id wisi. Sed facilisis, augue in ultrices fringilla, purus nisl euismod nibh, a placerat lacus quam sed elit.</p>
+			<p>Sed purus neque, suscipit vitae, cursus vitae, porttitor non, dui. Mauris volutpat dui vitae sapien. Duis laoreet nibh vitae sem. Phasellus ornare. Morbi sollicitudin mi ut nibh. Morbi egestas elementum tellus.</p>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur viverra ultrices ante. Aliquam nec lectus. Praesent vitae risus. Aenean vulputate sapien et leo. Nullam euismod tortor id wisi. Sed facilisis, augue in ultrices fringilla, purus nisl euismod nibh, a placerat lacus quam sed elit.</p>
+		</div>
+	</div>
+</body>
+</html>
